@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería</title>
+
+    <style>
+
+        body{
+            text-align: center;
+        }
+
+        .responsive{
+            width: 100%;
+            height: auto;
+        }
+
+        .shadow{
+            box-shadow: 6px 5px 10px 0px rgba(0,0,0,0.49);
+        }
+
+        .tag{
+            
+            color: black;
+            border-style: outset;
+            border-radius: 30px;
+            padding: 1px;
+        }
+
+        .text-h {font-size: 4vw;}
+
+
+        * { box-sizing: border-box; } 
+        
+        /* Para versión móvil (Mobile First): */ 
+        [class*="col-"] { 
+            width: 100%; 
+            padding: 10px; 
+            } 
+        
+        /* Para versión escritorio o laptop: */
+        /*Transición de 2 columnas -> 1 columna*/
+        @media only screen and (min-width: 600px) { 
+            .col-3 {width: 50%;}
+             
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            
+        [class*="col-"] { 
+            float: left; 
+            } 
+        
+        .row::after { 
+            content: ""; 
+            clear: both; 
+            display: table; 
+            }
+        }
+
+        /*Transición de 3 columnas -> 2 columna*/
+        @media only screen and (min-width: 800px) { 
+            .col-3 {width: 33.33%;}
+             
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            
+        [class*="col-"] { 
+            float: left; 
+            } 
+        
+        .row::after { 
+            content: ""; 
+            clear: both; 
+            display: table; 
+            }
+        }
+
+        /*/*Transición hasta 4 columnas -> 3 columna*/
+        @media only screen and (min-width: 1280px) { 
+            .col-3 {width: 33.33%;}
+
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+        [class*="col-"] { 
+            float: left; 
+            } 
+        
+        .row::after { 
+            content: ""; 
+            clear: both; 
+            display: table; 
+            }
+        }
+
+        /*Empieza en 4 columnas -> 3 columnas*/
+        @media only screen and (min-width: 1366px) { 
+            /**/
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+
+            
+            
+        [class*="col-"] { 
+            float: left; 
+            } 
+        
+        .row::after { 
+            content: ""; 
+            clear: both; 
+            display: table; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col-12">
+            <h1 style="font-size: 6vw;">Mi Galería</h1>
+            <h4 class="text-h" > Conectando etiquetas a fotografías </h4>
+            <p class="text-h" >Las mejores fotografías de naturaleza salvaje del 2019</p>
+        </div>
+
+        <div class="col-12">
+            <div class="col-3 shadow">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/nieve_9a9f6aeb_1000x538.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #VidaSalvaje
+                    </div>
+                    <div class="col-4 tag">
+                        #Kumtagh
+                    </div>
+                    <div class="col-4 tag">
+                        #Desierto
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #Antilope
+                    </div>
+                    <div class="col-6 tag">
+                        #Xinjiang
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 shadow">
+                <div class="row" >
+                    <div class="col-12">
+                        <img src="img/leopardo_e9b692ce_1000x667.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #VidaSalvaje
+                    </div>
+                    <div class="col-4 tag">
+                        #Jaguar
+                    </div>
+                    <div class="col-4 tag">
+                        #EEUU
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #México
+                    </div>
+                    <div class="col-6 tag">
+                        #Photojournalism 
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 shadow">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/dallssheep_7a975c8c_1200x800.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #VidaSalvaje
+                    </div>
+                    <div class="col-4 tag">
+                        #Artico
+                        
+                    </div>
+                    <div class="col-4 tag">
+                        #Nieve
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #CarneroDeDall
+                    </div>
+                    <div class="col-6 tag">
+                        #Photojournalism 
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 shadow">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/aguila_10b8dfa5_1000x712.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #VidaSalvaje
+                    </div>
+                    <div class="col-4 tag">
+                        #Aguila
+                    </div>
+                    <div class="col-4 tag">
+                        #Ave
+                         
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #Photojournalism
+                    </div>
+                    <div class="col-6 tag">
+                        #Carroña
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="col-12">
+            <div class="col-3 shadow">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/©-marsel-van-oosten-wildlife-photographer.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #VidaSalvaje
+                    </div>
+                    <div class="col-4 tag">
+                        #Langure
+                    </div>
+                    <div class="col-4 tag">
+                        #Qinling
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #Montaña
+                    </div>
+                    <div class="col-6 tag">
+                        #ChatoDorado
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 shadow">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/©-skye-meaker-wildlife-photographer-of-the-year.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #VidaSalvaje
+                    </div>
+                    <div class="col-4 tag">
+                        #Mashatu
+                    </div>
+                    <div class="col-4 tag">
+                        #Mathoja
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #Leopardo
+                    </div>
+                    <div class="col-6 tag">
+                        #Reserva
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 shadow">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/©-arshdeep-singh-wildlife-photographer-of-the-year.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #Street
+                    </div>
+                    <div class="col-4 tag">
+                        #Búhos
+                    </div>
+                    <div class="col-4 tag">
+                        #Punjab
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #mochueloBrahmán
+                    </div>
+                    <div class="col-6 tag">
+                        #City
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 shadow">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="img/©-georgina-steytler-wildlife-photographer-of-the-year.jpg" class="responsive">
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-4 tag">
+                        #City
+                    </div>
+                    <div class="col-4 tag">
+                        #Agua
+                    </div>
+                    <div class="col-4 tag">
+                        #Work
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 tag">
+                        #Avispas
+                    </div>
+                    <div class="col-6 tag">
+                        #Street
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+</body>
+</html>
